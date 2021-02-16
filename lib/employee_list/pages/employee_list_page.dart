@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/EmployeeList/view_models/employee_list_view_model.dart';
-import 'package:learning_flutter/EmployeeList/widgets/employee_list_item.dart';
+import 'package:learning_flutter/employee_list/view_models/employee_list_view_model.dart';
+import 'package:learning_flutter/employee_list/widgets/employee_list_item.dart';
+import 'package:learning_flutter/utils/shared_preferences_handler.dart';
 import 'package:provider/provider.dart';
 
 class EmployeeListPage extends StatefulWidget {
@@ -8,7 +9,8 @@ class EmployeeListPage extends StatefulWidget {
   _EmployeeListPageState createState() => _EmployeeListPageState();
 }
 
-class _EmployeeListPageState extends State<EmployeeListPage> {
+class _EmployeeListPageState extends State<EmployeeListPage>
+    with SharedPreferencesHandler {
   EmployeeListViewModel dataEmployees;
   bool isLoading = true;
 
@@ -27,6 +29,7 @@ class _EmployeeListPageState extends State<EmployeeListPage> {
     setState(() {
       isLoading = false;
     });
+    var data = await getUserData();
   }
 
   @override
@@ -50,7 +53,7 @@ class _EmployeeListPageState extends State<EmployeeListPage> {
             ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () => Navigator.pushNamed(context, '/createEmployee'),
+        onPressed: () => Navigator.pushNamed(context, '/create_employee'),
       ),
     );
   }

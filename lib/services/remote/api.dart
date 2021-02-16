@@ -20,8 +20,10 @@ class Api {
     );
   }
 
-  final String apiBaseUrl = '$baseUrl/employee';
-  final Dio dio = Dio();
+  static BaseOptions options = new BaseOptions(
+    baseUrl: '$baseUrl/employee',
+  );
+  final Dio dio = Dio(options);
 
   Future<Response<dynamic>> wrapE(
       Future<Response<dynamic>> Function() dioApi) async {

@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
 
-//URL API
-const String baseUrl = 'https://belajar.landa.co.id/flutter_api';
-
-//TEXT
-const submitBtn = 'Submit';
-// const submitBtn = 'Kirim';
-
 //COLORS
 const mainColor = Color(0xFFDC1F2E);
 const bgColor = Color(0xFFFFFFFF);

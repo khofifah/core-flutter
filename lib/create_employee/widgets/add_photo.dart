@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:learning_flutter/CreateEmployee/view_models/add_photo_view_model.dart';
+import 'package:learning_flutter/create_employee/view_models/add_photo_view_model.dart';
 import 'package:learning_flutter/utils/app_sizes.dart';
 import 'package:provider/provider.dart';
 

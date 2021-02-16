@@ -1,12 +1,14 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/CreateEmployee/view_models/add_cv_view_model.dart';
-import 'package:learning_flutter/CreateEmployee/view_models/add_photo_view_model.dart';
-import 'package:learning_flutter/CreateEmployee/view_models/create_employee_view_model.dart';
-import 'package:learning_flutter/CreateEmployee/widgets/add_cv.dart';
-import 'package:learning_flutter/CreateEmployee/widgets/add_photo.dart';
-import 'package:learning_flutter/CreateEmployee/widgets/label_form.dart';
+import 'package:learning_flutter/create_employee/view_models/add_cv_view_model.dart';
+import 'package:learning_flutter/create_employee/view_models/add_photo_view_model.dart';
+import 'package:learning_flutter/create_employee/view_models/create_employee_view_model.dart';
+import 'package:learning_flutter/create_employee/widgets/add_cv.dart';
+import 'package:learning_flutter/create_employee/widgets/add_photo.dart';
+import 'package:learning_flutter/create_employee/widgets/label_form.dart';
 import 'package:provider/provider.dart';
+
+import '../../utils/app_sizes.dart';
 
 class CreateEmployeePage extends StatefulWidget {
   @override
@@ -39,7 +41,7 @@ class _CreateEmployeePageState extends State<CreateEmployeePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AddPhoto(),
-                    SizedBox(height: 15),
+                    SizedBox(height: Sizes.s120),
                     LabelForm(label: 'Nama'),
                     TextFormField(
                       controller: controllerNama,

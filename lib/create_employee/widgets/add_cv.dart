@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learning_flutter/CreateEmployee/view_models/add_cv_view_model.dart';
-import 'package:learning_flutter/CreateEmployee/widgets/label_form.dart';
+import 'package:learning_flutter/create_employee/view_models/add_cv_view_model.dart';
+import 'package:learning_flutter/create_employee/widgets/label_form.dart';
 import 'package:learning_flutter/utils/app_sizes.dart';
 import 'package:provider/provider.dart';
 

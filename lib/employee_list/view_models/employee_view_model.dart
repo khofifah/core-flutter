@@ -1,4 +1,4 @@
-import 'package:learning_flutter/EmployeeList/models/employee.dart';
+import 'package:learning_flutter/employee_list/models/employee.dart';
 
 class EmployeeViewModel {
   Employee employee;

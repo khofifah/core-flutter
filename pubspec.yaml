@@ -15,6 +15,7 @@ dependencies:
   connectivity: ^2.0.2
   image_picker: ^0.6.7+21
   file_picker: ^2.1.5+1
+  shared_preferences: ^0.5.12+4
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +23,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+  fonts:
+    - family: Gotham
+      fonts:
+        - asset: fonts/gotham-book.ttf
+    - family: Poppins
+      fonts:
+        - asset: fonts/poppins-regular.ttf
