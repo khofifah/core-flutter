@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_flutter/employee_list/view_models/employee_view_model.dart';
-import 'package:learning_flutter/services/remote/api.dart';
-import 'package:learning_flutter/utils/constant.dart';
+import 'package:learning_flutter/utils/api_url.dart';
 
 import '../../utils/app_sizes.dart';
 
@@ -21,7 +20,7 @@ class EmployeeListItem extends StatelessWidget {
           contentPadding: EdgeInsets.all(5),
           title: Text(
             employee.nama,
-            style: TextStyle(fontSize: FontSize.s12),
+            style: TextStyle(fontSize: FontSizes.s12),
           ),
           leading: CircleAvatar(
             backgroundImage: employee.foto == null || employee.foto == ''

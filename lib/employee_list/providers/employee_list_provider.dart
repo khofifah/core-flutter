@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learning_flutter/employee_list/view_models/employee_view_model.dart';
 import 'package:learning_flutter/services/remote/main_api.dart';
 
-class EmployeeListViewModel extends ChangeNotifier {
+class EmployeeListProvider extends ChangeNotifier {
   List<EmployeeViewModel> employees = List<EmployeeViewModel>();
 
   Future<void> getAllEmployee() async {

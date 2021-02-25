@@ -120,7 +120,7 @@ class Sizes {
       allowFontScaling: true,
     );
 
-    FontSize.setScreenAwareFontSize();
+    FontSizes.setScreenAwareFontSizes();
 
     /*Padding & Margin Constants*/
 
@@ -184,7 +184,7 @@ class Sizes {
   }
 }
 
-class FontSize {
+class FontSizes {
   static double s7 = 7.0;
   static double s8 = 8.0;
   static double s9 = 9.0;
@@ -211,7 +211,7 @@ class FontSize {
   static double s30 = 30.0;
   static double s36 = 36.0;
 
-  static setDefaultFontSize() {
+  static setDefaultFontSizes() {
     s7 = 7.0;
     s8 = 8.0;
     s9 = 9.0;
@@ -239,7 +239,7 @@ class FontSize {
     s36 = 36.0;
   }
 
-  static setScreenAwareFontSize() {
+  static setScreenAwareFontSizes() {
     s7 = ScreenUtil().setSp(7.0);
     s8 = ScreenUtil().setSp(8.0);
     s9 = ScreenUtil().setSp(9.0);

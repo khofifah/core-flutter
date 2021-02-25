@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:learning_flutter/services/interceptors/dio_connectifity_retrier.dart';
 import 'package:learning_flutter/services/interceptors/retry_interceptor.dart';
-import 'package:learning_flutter/utils/constant.dart';
+import 'package:learning_flutter/utils/api_url.dart';
 
 class Api {
   Api() {

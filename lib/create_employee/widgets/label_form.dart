@@ -11,7 +11,7 @@ class LabelForm extends StatelessWidget {
     return Text(
       label,
       style: TextStyle(
-        fontSize: FontSize.s16,
+        fontSize: FontSizes.s16,
         fontWeight: FontWeight.bold,
       ),
     );
